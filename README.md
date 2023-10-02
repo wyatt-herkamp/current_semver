@@ -6,6 +6,7 @@ This will parse the current version of your crate and create the semver::Version
 
 ```rust
 pub fn main() {
+    /// Make sure to include the semver crate
     let version: semver::Version = current_semver!();
 }
 ```
