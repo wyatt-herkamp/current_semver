@@ -1,6 +1,6 @@
 [package]
 name = "current_semver"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Wyatt Herkamp <wherkamp@gmail.com>"]
 license = "MIT OR Apache-2.0"
@@ -14,5 +14,5 @@ proc-macro = true
 [dependencies]
 quote = "1"
 proc-macro2 = "1.0"
-syn = { version = "2",features = ["full","extra-traits"] }
+syn = { version = "2",features = ["full"] }
 

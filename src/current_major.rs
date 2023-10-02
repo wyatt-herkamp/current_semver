@@ -9,7 +9,6 @@ pub struct CurrentMajor{
 }
 impl Parse for CurrentMajor{
     fn parse(input: syn::parse::ParseStream) -> syn::Result<Self> {
-        println!("Parsing CurrentMajor with input: {:?}", input);
         return if input.peek(syn::Token![as]) {
             input.parse::<syn::Token![as]>()?;
             let as_type: Type = input.parse()?;
